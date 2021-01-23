@@ -30,3 +30,11 @@ function encrypt(message) {
   
   return cipher.join("");
 }
+
+$(document).ready(function() {
+  $(".form-group").submit(function(event) {
+    event.preventDefault();
+    const message = $("#message").val();
+    $("#encrypted").text(encrypt(message));
+  })
+})
