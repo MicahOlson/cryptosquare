@@ -1,51 +1,20 @@
+/*
+Describe: encrypt()
+Test: "It takes a string and returns a string"
+Expect(encrypt("Have a nice day. Feed the dog & chill out!")).toEqual("Have a nice day. Feed the dog & chill out!");
 
-Rules:
-"Take length of message and find square root"
-""
+Test: "It returns a lowercase string"
+Expect(encrypt("Have a nice day. Feed the dog & chill out!")).toEqual("have a nice day. feed the dog & chill out!");
 
-Describe: squareCode(message)
-Test: "Take length of message and find square root"
-Expect(squareCode(25).toEqual(5));
+Test: "It returns a string with all spaces and punctuation removed"
+Expect(encrypt("Have a nice day. Feed the dog & chill out!")).toEqual("haveanicedayfeedthedogchillout");
 
-squareCode(message) {
-  const messageLength = Math.sqrt(message.length);
-  if ( 
-}
+Test: "It returns a string in groups of 5 characters separated by a space"
+Expect(encrypt("Have a nice day. Feed the dog & chill out!")).toEqual("havea niced ayfee dthed ogchi llout")
 
-Test: "Find closest square root of messages without whole number square roots"
-Expect(squareCode(50).toEqual(8,7))
-Test: ""
-Test: ""
+Test: "It places the individual characters (without spaces) in an array modeling a grid"
+Expect(encrypt("Have a nice day. Feed the dog & chill out!")).toEqual([[havean], [iceday], [feedth], [edogch], [illout]])
 
-
-console.log("This is a test")
-
-
-let stringLength = 37;
-
-let conditional = Math.sqrt(stringLength);
-
-if conditional === whole number
-  conditional is # columns AND # rows
- else
-  round up to next whole number === # of cols
-  X
-  floor conditional === # rows
-
-  6.xxxxxxxxxxxxx
-7 x 6 = 42 
-
-1 2 3 4 5 6 7
-1 2 3 4 5 6 7
-1 2 3 4 5 6 7
-1 2 3 4 5 6 7
-1 2 3 4 5 6 7
-1 2  
-
-// function isLeapYear(year) {
-  if (year % 4 === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+Test: "It concatenates the first character of each nested array, then the second and so on, to return a cipher of the string in the format of spec 4"
+Expect(encrypt("Have a nice day. Feed the dog & chill out!")).toEqual("hifei acedl veeol eddgo aatcu nyhht")
+*/

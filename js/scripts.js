@@ -12,7 +12,7 @@ function encrypt(message) {
       column[j] = messageArray.shift();
     }
   }
-  // Get cipher characters by going down rows (top to bottom in each column)
+  // Get cipher character-set (top to bottom in each col left to right)
   let cipherArray = [];
   for (let i = 0; i < columns; i++) {
     for (let j = 0; j < squareCode.length; j++) {
