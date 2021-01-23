@@ -11,7 +11,7 @@ Authored by: Micah L. Olson
 
 ## Description
 _Practice: Cryptosquare_  
-A goal of this exercise is to practice test-driven development (TDD) to break a project down into specs, or tests, and write code to pass each test one at a time, building up from the last. Additionally, various looping techniques should be utilized.
+The primary goal of this exercise is to practice test-driven development (TDD) to break a project down into specs and tests, and to write code to pass each test one at a time, building up from the last. Additionally, various looping techniques should be utilized.
 
 ## Technologies Used
 * HTML5
